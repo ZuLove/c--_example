@@ -10,4 +10,8 @@ private:
 	std::string contents;
 	index cursor;
 	index height, width;
+}; 
+class Sales_item {
+
+
 };

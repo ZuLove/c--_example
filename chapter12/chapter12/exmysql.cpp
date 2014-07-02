@@ -12,7 +12,8 @@ int main()
 	if (conn.connect("xytx_qiyuan", "127.0.0.1", "root", "yuli", 3306))
 	{
 
-
+		//cout << conn.count_rows("login") << endl;//获取表login中的数据
+		//conn.create_db("mysqlpp");//创建数据库mysqlpp
 		mysqlpp::Query query = conn.query("select role_name,ip from login");
 		//conn.
 		//query =conn.query("select role_name,ip from login default set names 'gbk'");
